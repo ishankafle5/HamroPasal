@@ -1,0 +1,70 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+.maincontainer{
+    background-color: #F3F0F0;
+    height: 480px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Tilt Neon', cursive;
+
+}
+.active{
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.secondcontainer{
+    background-color: #ffff;
+    height: 20rem;
+    width: 36rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 1rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tilt Neon', cursive;
+}
+
+#upload-icon {
+    font-size: 15rem;
+    font-weight: 10px;
+    position: relative;
+    bottom: 2rem;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.firstparagraph{
+    position: relative;
+    bottom: 2rem;
+    font-size: 1.4rem;
+    opacity: 50%;
+    font-family: 'Tilt Neon', cursive;
+}
+.heading4{
+    font-size: 1.7rem;
+    position: relative;
+    bottom: 0.7rem;
+    font-weight: 1rem;
+    opacity: 0.7;
+    font-family: 'Tilt Neon', cursive;
+}
+.fa-sharp{
+    position: relative;
+    left: 23.5rem;
+    bottom: 4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+

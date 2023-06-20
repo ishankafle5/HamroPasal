@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --mainColor: #6c63FF;
+}
+.admin-header{
+	width: 100%;
+    height: 40px;
+	display: flex;
+	justify-content: space-around;
+}
+.admin-header a{
+	border: 2px solid var(--mainColor);
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--mainColor);
+	text-decoration: none;
+}
+
+.add-product-form{
+    width: 100%;
+    height: calc(100vh - 120px);
+    position: absolute;
+    padding: 20px 30px;
+}
+.add-product-form form{
+    background-color: rgba(0,0,0,0.05);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    gap: 100px;
+}
+.left2{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.left2 label{
+    font-size: 18px;
+}
+.left2 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+.right2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.img-section{
+    width: 250px;
+    height: 250px;
+    border: 1px dashed black;
+}
+.img-section img{
+	width: 100%;
+	height: 100%;
+}
+.bottom{
+    display: flex;
+    gap: 60px;
+}
+.bottom button,.bottom a{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursot: pointer;
+}
+.bottom button{
+    padding: 10px 40px;
+    background-color: var(--mainColor);
+}
+.bottom a{
+    padding: 10px 60px;
+    background-color: rgba(255, 0, 0, 0.479);
+    color: white;
+}

@@ -1,0 +1,303 @@
+@charset "ISO-8859-1";@charset "ISO-8859-1";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --mainColor: #6c63FF;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--mainColor);
+}
+
+/* Dropdown Button */
+.dropbtn {
+	border: 2px solid var(--mainColor);
+    color: var(--mainColor);
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 7px 20px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: var(--mainColor);
+  color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: -20%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.search-bar{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 450px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.search-field{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    padding: 0 20px;
+    font-size: 16px;
+}
+input[type="submit"]{
+    display: none;
+}
+.search-bar label{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    background-color: var(--mainColor);
+    cursor: pointer;
+}
+.cart img, .profile img{
+    width: 30px;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 50px;
+}
+.icons{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-section{
+	height: 100vh;
+	width: 350px;
+	position: fixed;
+    right: -100%;
+    top: 0;
+    background-color: rgb(225, 225, 225);
+    padding: 0 30px;
+    transition: all 0.7s ease;
+}
+.profile-section .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    color: var(--mainColor);
+}
+.profile-section .top h1{
+    font-size: 24px;
+}
+.profile-section .top i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.profile-section .middle{
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.profile-section .middle h1{
+	font-size: 12px;
+}
+.profile-section .middle a, edit-profile-btn{
+    width: 100%;
+    border: 2px solid var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--mainColor);
+}
+.profile-section .middle a:hover{
+    background-color: var(--mainColor);
+    color: white;
+}
+.profile-section.active{
+    right: 0;
+}
+
+.cart-section{
+	height: 100vh;
+	width: 350px;
+	position: fixed;
+    right: -100%;
+    top: 0;
+    background-color: rgb(225, 225, 225);
+    padding: 0 30px;
+    transition: all 0.7s ease;
+}
+.cart-section .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    color: var(--mainColor);
+}
+.cart-section .top h1{
+    font-size: 24px;
+}
+.cart-section .top i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.cart-section .middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 70%;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+.middle .item{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: rgba(0,0,0,0.05);
+	padding: 10px;
+	border-radius: 8px;
+}
+.middle .item img{
+	width: 70px;
+	height: 70px;
+	margin-right: 20px;
+}
+.lower{
+	width: 100%;	
+}
+.lower span{
+	display: flex;
+	gap: 20px;
+	font-weight: 600;
+	font-weight: 18px;
+}
+.lower .index{
+	color: var(--mainColor);
+}
+.lower a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 40px;
+	background: var(--mainColor);
+	border: none;
+	border: 2px solid #8c2de2 0;
+	text-decoration: none;
+	color: white;
+	font-weight: semi-bold;
+	font-size: 18px;
+	outline: none;
+	margin-top: 5px;
+}
+.cart-section.active{
+    right: 0;
+}
+
+
+.search-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    position: absolute;
+    top: -60%;
+    right: 220px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.search-result .item{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: rgba(255,255,255,0.5);
+	padding: 10px;
+	border-radius: 8px;
+	margin: 10px 0;
+}
+.search-result .item img{
+	width: 70px;
+	height: 70px;
+	margin-right: 20px;
+}
+.search-result.active{
+	opacity: 1;
+	top: 70px;
+}
+.search-head{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 30px;
+	color: black;
+	font-weight: 900;
+	font-size: 20px;
+}

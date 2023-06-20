@@ -1,0 +1,99 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first{
+    /* width: 100%;
+    height: 100vh; */
+    height: 600px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3rem;
+}
+
+.mainin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 25rem;
+    width: 35rem;
+    /* position: relative;
+    top: 10px;
+    left: 4rem; */
+}
+.first-heading{
+    font-weight: 600;
+    font-size: 35px;
+    font-family: 'Tilt Neon', cursive;
+}
+.first-input{
+    height: 2.8rem;
+    width: 20rem;
+    border-radius: 4px;
+    border: 2px solid #E4F0FE;
+    background-color: #E4F0FE;
+    padding: 0 20px;
+}
+.second-input{
+    height: 2.8rem;
+    width: 20rem;
+    border-radius: 4px;
+    border: 2px solid #E4F0FE;
+    background-color: #E4F0FE;
+    padding: 0 20px;
+}
+
+.first-button{
+    height: 2.8rem;
+    width: 20rem;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #6C63FF;
+    background-color: #6C63FF;
+    color: #ffff;
+    font-size: 20px;
+    font-family: 'Tilt Neon', cursive;
+}
+.first-para{
+    height: 5rem;
+    font-family: 'Tilt Neon', cursive;
+}
+.first-para span{
+    color: #6C63FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.first-image{
+    height: 25rem;
+    position: relative;
+    bottom: 3rem;
+}
+.bx{
+    position: relative;
+    left: 5rem;
+}
+.return{
+    text-decoration: none;
+    color: #6C63FF;
+    border: 2px solid #6C63FF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: -30px;
+}
